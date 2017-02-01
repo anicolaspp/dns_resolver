@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		084D665C1ABA642200E043D2 /* ResponseParser.c in Sources */ = {isa = PBXBuildFile; fileRef = 084D665B1ABA642200E043D2 /* ResponseParser.c */; };
 		088D90FC1AB7E07600A1EF51 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 088D90FB1AB7E07600A1EF51 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		084D66441ABA20E900E043D2 /* Others.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Others.c; sourceTree = "<group>"; };
+		084D66451ABA20E900E043D2 /* Others.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Others.h; sourceTree = "<group>"; };
+		084D665A1ABA5D0500E043D2 /* ResponseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseParser.h; sourceTree = "<group>"; };
+		084D665B1ABA642200E043D2 /* ResponseParser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ResponseParser.c; sourceTree = "<group>"; };
 		088D90F81AB7E07600A1EF51 /* dnsResolver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dnsResolver; sourceTree = BUILT_PRODUCTS_DIR; };
 		088D90FB1AB7E07600A1EF51 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				088D90FB1AB7E07600A1EF51 /* main.c */,
+				084D66441ABA20E900E043D2 /* Others.c */,
+				084D66451ABA20E900E043D2 /* Others.h */,
+				084D665A1ABA5D0500E043D2 /* ResponseParser.h */,
+				084D665B1ABA642200E043D2 /* ResponseParser.c */,
 			);
 			path = dnsResolver;
 			sourceTree = "<group>";
@@ -119,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				088D90FC1AB7E07600A1EF51 /* main.c in Sources */,
+				084D665C1ABA642200E043D2 /* ResponseParser.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,14 +212,18 @@
 		088D91001AB7E07600A1EF51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = i386;
 			};
 			name = Debug;
 		};
 		088D91011AB7E07600A1EF51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = i386;
 			};
 			name = Release;
 		};
@@ -232,6 +246,7 @@
 				088D91011AB7E07600A1EF51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
